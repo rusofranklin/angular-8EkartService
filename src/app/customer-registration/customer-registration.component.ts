@@ -12,15 +12,9 @@ import { HttpClient } from '@angular/common/http';
   imports:   [ HttpClient ],
 })
 export class CustomerRegistrationComponent {
-form: FormGroup;
-  constructor(public fb: FormBuilder, private httpClient: HttpClient) {
-    this.form = this.fb.group({
-      name: [''],
-      avatar: ['']
-    }) 
-   
-}
- SubmitForm() {
-    console.log("this.form.value")
+first_name='';
+ onClickSubmit(data) {this.first_name = data.first_name;
+  console.log("this.form.value")
   }
 }
+
