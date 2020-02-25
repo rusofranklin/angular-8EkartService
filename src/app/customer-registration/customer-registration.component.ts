@@ -14,7 +14,7 @@ import { HttpClient } from '@angular/common/http';
 export class CustomerRegistrationComponent {
 first_name='';
  onClickSubmit(data) {this.first_name = data.first_name;
-  console.log("this.form.value")
+  console.log(this.first_name);
   }
 }
 
