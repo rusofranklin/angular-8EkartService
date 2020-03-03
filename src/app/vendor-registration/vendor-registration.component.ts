@@ -9,6 +9,7 @@ export class VendorRegistrationComponent implements OnInit {
 
   constructor() { }
 
+
   ngOnInit() {
   }
 
